@@ -1,0 +1,9 @@
+version: '3'
+services:
+  code: 
+    image: node:8
+    working_dir: /usr/src/app
+    volumes:
+      - "./code:/usr/src/app"
+    ports:
+      - "8080:8080"
